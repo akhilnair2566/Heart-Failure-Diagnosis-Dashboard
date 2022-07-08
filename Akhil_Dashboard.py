@@ -5,7 +5,7 @@ import requests
 from streamlit_lottie import st_lottie
 
 # reading csv file
-data = pd.read_csv(r"D:\dashboard\heart_failure.csv")
+data = pd.read_csv(r"{csv_file_location}")
 
 # replacing the entries in the dataset to make in more readable to us -> changing 0,1 to no,yes etc
 data['sex'].replace([0, 1], ['Female', 'Male'], inplace=True)
